@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    tools:context="com.example.hxr.trafficstop.SendPhotosActivity">
+
+    <Button
+        android:id="@+id/selfie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/take_selfie"
+        android:onClick="dispatchTakePictureIntent"
+        />
+
+    <Button
+        android:id="@+id/plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pick_license_photo"
+        android:layout_below="@+id/selfie"
+        />
+
+    <Button
+        android:id="@+id/insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pick_insurance_photo"
+        android:layout_below="@+id/plate"
+        />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pick_registration_photo"
+        android:layout_below="@+id/insurance"
+        />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/send_continue"
+        android:layout_below="@+id/registration"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveButton"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/insurance"
+        android:layout_toStartOf="@+id/insurance"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/saveButton"
+        android:layout_alignStart="@+id/saveButton" />
+
+</RelativeLayout>

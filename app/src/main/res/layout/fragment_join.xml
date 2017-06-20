@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="center"
+android:gravity="center_vertical"
+android:padding="10dp"
+tools:context="com.example.hxr.trafficstop.Join">
+
+    <TextView
+        android:id="@+id/Directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter License Plate Number"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Plate"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="67dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Join"
+        android:layout_below="@+id/editText"
+        />
+
+</RelativeLayout>

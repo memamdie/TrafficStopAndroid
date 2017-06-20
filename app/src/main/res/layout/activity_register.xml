@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    tools:context="com.example.hxr.trafficstop.Register">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/firstName"/>
+
+    <EditText
+        android:id="@+id/driversLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Drivers License"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/lastName"/>
+
+
+    <EditText
+        android:id="@+id/Address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address 1"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/driversLicense"/>
+
+    <EditText
+        android:id="@+id/Address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address 2"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/Address1"/>
+
+    <EditText
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="City"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/Address2"/>
+
+    <EditText
+        android:id="@+id/State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="State"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/City"/>
+
+    <EditText
+        android:id="@+id/Zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Zip"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/State"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:layout_below="@+id/State"
+        android:onClick="insert"
+        />
+
+</RelativeLayout>

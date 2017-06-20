@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TrafficStop</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="Home">Home</string>
+    <string name="Select_Vehicle">Select Vehicle</string>
+    <string name="Add_New_Vehicle">Add New Vehicle</string>
+    <string name="Continue">Continue</string>
+    <string name="Cars">Cars</string>
+    <string name="new_car">New Car</string>
+    <string name="Join">Join</string>
+    <string name="add_new_car">Add New Car</string>
+    <string name="update_car">Update Car</string>
+    <string name="register">Register</string>
+    <string name="update">Update</string>
+    <string name="take_selfie">Take Selfie</string>
+    <string name="pick_license_photo">Pick License Photo</string>
+    <string name="pick_insurance_photo">Pick Insurance Photo</string>
+    <string name="pick_registration_photo">Pick Registration Photo</string>
+    <string name="send_continue"><![CDATA[Send & Continue]]></string>
+</resources>

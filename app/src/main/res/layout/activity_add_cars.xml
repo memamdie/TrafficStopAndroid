@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    tools:context="com.example.hxr.trafficstop.AddCarsActivity">
+
+    <EditText
+        android:id="@+id/licensePlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="License Plate #"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Make"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/licensePlate"/>
+
+    <EditText
+        android:id="@+id/model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Model"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/make"/>
+
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Year"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/model"/>
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Color"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/year"/>
+
+    <EditText
+        android:id="@+id/nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nickname"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/color"/>
+
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:layout_below="@+id/nickName"
+        android:onClick="addCars"
+        />
+
+</RelativeLayout>
